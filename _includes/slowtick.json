@@ -1,0 +1,18 @@
+
+{
+    "@context": "http://schema.org",
+    "@type": "Person",
+    "name": "SlowTick",
+    "alternateName": "slowtick",
+    "description": "fictional person named slowtick",
+    "url" : "http://www.slowtick.com",
+    "image": "http://www.slowtick.com/assets/slowtick.svg",
+    "email": "slowtick@hotmail.com",
+    "homeLocation": {
+        "@type": "Place",
+        "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "Singapore"
+        }
+    }
+}
