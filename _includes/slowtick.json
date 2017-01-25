@@ -6,7 +6,7 @@
     "alternateName": "slowtick",
     "description": "fictional person named slowtick",
     "url" : "http://www.slowtick.com",
-    "image": "http://www.slowtick.com/assets/slowtick.svg",
+    "image": "http://www.slowtick.com/assets/images/slowtick.svg",
     "email": "slowtick@hotmail.com",
     "homeLocation": {
         "@type": "Place",
