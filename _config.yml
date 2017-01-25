@@ -3,3 +3,5 @@ description: personal blog
 show_downloads: false
 google_analytics: UA-90858623-1
 theme: jekyll-theme-cayman
+gems:
+  - jekyll-sitemap

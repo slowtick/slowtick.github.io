@@ -2,6 +2,7 @@
 layout: default
 title: Using Markdown + Cayman theme elements
 permalink: /help
+sitemap: false
 ---
 
 Text can be **bold**, _italic_, or ~~strikethrough~~.

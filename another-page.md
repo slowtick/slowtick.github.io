@@ -1,5 +1,6 @@
 ---
 layout: default
+sitemap: false
 ---
 
 ## Welcome to another page
