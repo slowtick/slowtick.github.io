@@ -1,0 +1,40 @@
+
+{
+    "@context": "http://schema.org",
+    "@type": "Blog",
+    "blogPost": {
+        "@type": "BlogPosting",
+        "datePublished":"2017-01-26T18:00:00+08:00",
+        "dateModified":"2017-01-26T13:00:00+08:00",
+        "headline": "Submitting website to crawlers and adding to business listing services",
+        "description": "Search engine and other crawlers accept website URLs submitted to it manually and can crawl from it. Business listing services helps gettng visibility in the local area",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://www.google.com/webmasters/tools/home"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "SlowTick",
+            "email": "slowtick@hotmail.com"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "SlowTick",
+            "email": "slowtick@hotmail.com",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "http://www.slowtick.com/assets/images/slowtick.png",
+                "width": 32,
+                "height": 32
+            }
+        },
+        "url": "http://www.slowtick.com/pages/getting-site-crawled",
+        "image": {
+            "@type": "ImageObject",
+            "url": "http://www.slowtick.com/assets/images/slowtick.png",
+            "width": 696,
+            "height": 696
+        },
+        "license": "https://creativecommons.org/licenses/by/4.0/"
+    }
+}
