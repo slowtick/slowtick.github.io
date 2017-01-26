@@ -1,0 +1,40 @@
+
+{
+    "@context": "http://schema.org",
+    "@type": "Blog",
+    "blogPost": {
+        "@type": "BlogPosting",
+        "datePublished":"2017-01-26T13:30:00+08:00",
+        "dateModified":"2017-01-26T13:30:00+08:00",
+        "headline": "Invoking Azure Kudu API end points using cURL",
+        "description": "Kudu provides API URL end points for a wide varity of actions that can be performed on the App Service instances. These URL end points can be invoked via simple cURL commands and are usable for quick and dirty scripting",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://github.com/projectkudu/kudu"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "SlowTick",
+            "email": "slowtick@hotmail.com"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "SlowTick",
+            "email": "slowtick@hotmail.com",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "http://www.slowtick.com/assets/images/slowtick.png",
+                "width": 32,
+                "height": 32
+            }
+        },
+        "url": "http://www.slowtick.com/pages/kudu-curl",
+        "image": {
+            "@type": "ImageObject",
+            "url": "http://www.slowtick.com/assets/images/kudu.png",
+            "width": 696,
+            "height": 696
+        },
+        "license": "https://creativecommons.org/licenses/by/4.0/"
+    }
+}

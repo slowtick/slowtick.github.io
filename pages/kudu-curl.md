@@ -2,6 +2,7 @@
 layout: default
 title: Azure Kudu services
 permalink: /pages/kudu-curl
+jsonld_include: kudu-curl.json
 ---
 
 Azure provides the excellent [Azure REST API](https://docs.microsoft.com/en-us/rest/api/) that can be used for managing all your Azure resources programatically. Azure also provides access to manage resources and services by other interfaces including [Azure CLI 2.0](https://docs.microsoft.com/en-us/cli/azure/install-az-cli2), [Azure PowerShell](https://github.com/Azure/azure-powershell), [Azure SDK for various languages](https://azure.microsoft.com/en-us/tools/) and [Kudu](https://github.com/projectkudu/kudu).
