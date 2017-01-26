@@ -6,5 +6,5 @@ jsonld_include: slowtick.json
 
 ### Pages
 
-- [Executing Kudu functions with `cURL`](pages/kudu-curl).
+- [Executing Kudu functions in Microsoft Azure App Services with `cURL`](pages/kudu-curl).
 
