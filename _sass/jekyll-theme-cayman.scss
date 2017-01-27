@@ -42,6 +42,15 @@ a {
   }
 }
 
+h1 > a {
+  color: white;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
 .btn {
   display: inline-block;
   margin-bottom: 1rem;
