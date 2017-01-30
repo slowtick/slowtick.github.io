@@ -8,6 +8,8 @@ jsonld_include: kudu-curl.json
 
 Azure provides the excellent [Azure REST API](https://docs.microsoft.com/en-us/rest/api/) that can be used for managing all your Azure resources programatically. Azure also provides access to manage resources and services by other interfaces including [Azure CLI 2.0](https://docs.microsoft.com/en-us/cli/azure/install-az-cli2), [Azure PowerShell](https://github.com/Azure/azure-powershell), [Azure SDK for various languages](https://azure.microsoft.com/en-us/tools/) and [Kudu](https://github.com/projectkudu/kudu).
 
+<img src="/assets/images/kudu.svg" alt="Microsoft Azure Project Kudu" style="float: right;">
+
 Kudu is deployed on all Microsoft Azure App Services (including Web apps, Mobile apps, Logic apps, and others) by default. Kudu provides a web based inteface, called Kudu Console, that is accessible usually by the URL `https://${sitename}.scm.azurewebsites.net`.
 
 Kudu also has API URL end points for a wide varity of actions that can be performed on the App Service instances. These URL end points are simpler than the full fledged Azure REST API, can be invoked via simple `cURL` commands and are usable for quick &amp; dirty scripting.
