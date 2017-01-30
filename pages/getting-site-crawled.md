@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Submitting website to crawlers and adding to business listing
+description: Search engine and other crawlers accept website URLs submitted to it manually and can crawl from it. Business listing services helps gettng visibility in the local area.
 permalink: /pages/getting-site-crawled
 jsonld_include: getting-site-crawled.json
 ---

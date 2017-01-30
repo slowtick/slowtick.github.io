@@ -1,7 +1,7 @@
 ---
 layout: default
 title: personal pages
-description: personal blog of slowtick
+description: personal blog and articles about web services & related technologies written by slowtick
 jsonld_include: slowtick.json
 ---
 

@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Azure Kudu services
+description: About Kudu API URL end points that can be invoked to perform actions on the Microsoft Azure App Service instances
 permalink: /pages/kudu-curl
 jsonld_include: kudu-curl.json
 ---
