@@ -43,7 +43,7 @@ a {
 }
 
 h1 > a {
-  color: white;
+  color: $header-heading-color;
   text-decoration: none;
 
   &:hover {
