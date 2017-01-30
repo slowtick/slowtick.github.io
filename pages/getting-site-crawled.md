@@ -10,7 +10,7 @@ jsonld_include: getting-site-crawled.json
 
 ### Submitting to Search engines
 
-Popular Search Engines use crawlers to periodically dowload your website pages and add to their search index. Typically if any of your website page is linked in an already indexed site, the search engine crawlers may find the link to your site and crawl your website automatically.
+Popular Search Engines use crawlers to periodically download your website pages and add to their search index. Typically, if any of your website pages are linked from an already indexed site, the search engine crawlers may find the link to your site and crawl your website automatically.
 
 For a new website that is not linked elsewhere, manually submitting to Search Engine helps getting the website indexed and have it available in search results.
 
