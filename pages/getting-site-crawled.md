@@ -6,6 +6,8 @@ permalink: /pages/getting-site-crawled
 jsonld_include: getting-site-crawled.json
 ---
 
+<img src="/assets/images/away-1991860_1920.jpg" width="832" height="308" alt="directions">
+
 ### Submitting to Search engines
 
 Popular Search Engines use crawlers to periodically dowload your website pages and add to their search index. Typically if any of your website page is linked in an already indexed site, the search engine crawlers may find the link to your site and crawl your website automatically.
