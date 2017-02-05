@@ -38,9 +38,13 @@ Popular business listing services include;
 |:---------------------|:--------------------------------------------------------------------------------|
 | Facebook Business    | [List business in Facebook](https://www.facebook.com/pages/create/)             |
 | LinkedIn Company page| [List business in LinkedIn](https://www.linkedin.com/company/add/show)          |
-| Google My Business   | [List in Google My Business](https://www.google.com/business/add)               |
+| Google My Business   | [List in Google My Business](https://www.google.com/business/)                  |
 | Bing Places          | [List in Bing Places for Business](https://www.bingplaces.com/DashBoard/Home) _limited regions_ |
+| Twitter for Business | [Business profile in Twitter](https://business.twitter.com/en/basics/create-a-twitter-business-profile.html) |
 | Yelp                 | [Add business in Yelp](https://biz.yelp.com/signup_business/new)                |
 | Foursquare           | [Add business in Foursquare](http://business.foursquare.com/)                   |
 
-_more content to be added_
+
+Additionally, listing Website or Business in local listing services (like Yellow Pages), can bring reach to people looking through via those listing services. Basic listing (about the website or business) is usually offered free of cost in such listing services. Popular [listing services in user locality can be found by search](the https://www.google.com.sg/search?q=business+listing+in+yellow+pages+near+me).
+
+With search being primarily used to find about services/websites, getting the website reachable by search helps bring in new users to the website. There are plenty of free as well as commercial resources available regarding optimizing websites for search (SEO); such resources can be found by a search inturn!
