@@ -7,6 +7,9 @@ jsonld_include: slowtick.json
 
 ### Pages
 
-- [Executing Kudu functions in Microsoft Azure App Services with `cURL`](pages/kudu-curl).
-- [Submitting website to crawlers and adding to business listing services](pages/getting-site-crawled).
-
+{% assign all_listed_pages = site.html_pages | sort: 'index_list_at_position' %}
+{% for a_page in all_listed_pages %}
+  {% if a_page.index_list_at_position %}
+- [{{ a_page.index_list_link_text }}]({{ a_page.url }})
+  {% endif %}
+{% endfor %}

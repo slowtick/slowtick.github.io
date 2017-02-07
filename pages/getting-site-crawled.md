@@ -4,6 +4,8 @@ title: Submitting website to crawlers and adding to business listing
 description: Search engine crawlers accept website submitted to it manually and can crawl from it. Business listing services helps making website visible in the local area.
 permalink: /pages/getting-site-crawled
 jsonld_include: getting-site-crawled.json
+index_list_at_position: 2
+index_list_link_text: Submitting website to crawlers and adding to business listing services
 ---
 
 <img src="/assets/images/away-1991860_1920.jpg" width="832" height="308" alt="directions">
