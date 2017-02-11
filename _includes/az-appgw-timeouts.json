@@ -1,0 +1,41 @@
+
+{
+    "@context": "http://schema.org",
+    "@type": "Blog",
+    "blogPost": {
+        "@type": "BlogPosting",
+        "dateCreated":"2017-02-11T00:30:00+08:00",
+        "dateModified":"2017-02-11T00:30:00+08:00",
+        "datePublished":"2017-02-11T00:30:00+08:00",
+        "headline": "Timeout settings in Azure Application Gateway and Azure App Service",
+        "description": "Azure Application Gateway provides load balancing and web application firewall services for Azure App Service instances. This document lists some of the connection timeout configuration settings in Azure Application Gateway and Azure App Service",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://github.com/projectkudu/kudu"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "SlowTick",
+            "email": "slowtick@hotmail.com"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "SlowTick",
+            "email": "slowtick@hotmail.com",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "http://www.slowtick.com/assets/images/slowtick.png",
+                "width": 32,
+                "height": 32
+            }
+        },
+        "url": "http://www.slowtick.com/pages/az-appgw-timeouts.html",
+        "image": {
+            "@type": "ImageObject",
+            "url": "http://www.slowtick.com/assets/images/kudu.png",
+            "width": 696,
+            "height": 696
+        },
+        "license": "https://creativecommons.org/licenses/by/4.0/"
+    }
+}
