@@ -31,13 +31,13 @@ az network application-gateway show --resource-group MY-RES-GROUP --name MY-APP-
 
 ### Timeouts in Azure App Service (applicationHost)
 
-Azure App Services (including Mobile apps, Web apps, Logic apps, and others) typically run latest version of Internet Information Services (IIS 10) tweaked for Azure. Some of the basic settings for this IIS instance could be configured via [Azure Portal - App Service blade](https://portal.azure.com/).
+Azure App Services (including Mobile apps, Web apps, Logic apps, and others) typically run latest version of Internet Information Services (IIS 10) tweaked for Azure. Some of the basic settings for this IIS instance could be configured via [Azure Portal - App Service blade](https://portal.azure.com/). Timeout settings in Application Host level (`<system.applicationHost>`) can be configured via below means.
 
 ## `connectionTimeout` in `system.applicationHost/webLimits` of `applicationHost.config`
 
-The [`webLimits`](https://www.iis.net/configreference/system.applicationhost/weblimits#005) element in `applicationHost.config` specifies a default connection time out of 2 minutes. This setting could not be changed directly as Azure App Service does not allow to edit `applicationHost.config` file, instead supports a mechanism called XML Document Transform (XDT) which allows to append/update values to the default `applicationHost.config` files.
+The [`webLimits`](https://www.iis.net/configreference/system.applicationhost/weblimits#005) element in `applicationHost.config` specifies a default connection time out of 2 minutes. This setting could not be changed directly in the `applicationHost.config` file as Azure App Service does not allow to edit the file, instead supports a mechanism called XML Document Transform (XDT) which allows to append/update values to the default `applicationHost.config` files.
 
-The App Service merges the default `applicationHost.config` and the user defined file `applicationHost.xdt` and uses the merged file for configuration. Following XML content can set the `connectionTimeout of webLimits` to 5 minutes. Note - this XDT content need to be uploaded to the file path `D:\home\site\applicationHost.xdt` on the App Service instance.
+The App Service merges the default `applicationHost.config` and the user defined file `applicationHost.xdt` and uses the merged file for its configuration. Following XML content can set the `connectionTimeout of webLimits` to 5 minutes. Note - this XDT content need to be uploaded to the file path `D:\home\site\applicationHost.xdt` on the App Service instance.
 
 {% highlight xml %}
 <?xml version="1.0"?>
@@ -50,7 +50,7 @@ The App Service merges the default `applicationHost.config` and the user defined
 
 ## `connectionTimeout` in `system.applicationHost/sites/site` of `applicationHost.config`
 
-The [`limits`](https://www.iis.net/configreference/system.applicationhost/sites/site/limits#005) element in `applicationHost.config` applies site wide connection timeout and defaults to 2 minutes. This can be updated using the XDT merging mechanism. Following is XDT for setting `connectionTimeout of limits` to 6 minutes to be kept in the file `D:\home\site\applicationHost.xdt`. Note - if there is an existing applicationConfig.xdt file, the element `sites` and its child elements from below XDT content can be added to the `<system.applicationHost>` in existing applicationConfig.xdt file.
+The [`limits`](https://www.iis.net/configreference/system.applicationhost/sites/site/limits#005) element in `applicationHost.config` applies site wide connection timeout and defaults to 2 minutes. This can be updated using the XDT merging mechanism. Following is XDT directive for setting `connectionTimeout` of site limits to 6 minutes and is to be kept in the file `D:\home\site\applicationHost.xdt`. Note - if there is an existing applicationConfig.xdt file, the element `sites` and its child elements from below XDT content can be added to the `<system.applicationHost>` in existing applicationConfig.xdt file.
 
 {% highlight xml %}
 <?xml version="1.0"?>
@@ -81,7 +81,7 @@ The default path to application web.config would be `https://{myapp}.scm.azurewe
 
 {% highlight shell %}
 # get physical path on app service instance to web.config
-az appservice web config show --resource-group MY-RES-GROUP -n dev-medbook-1 --query 'virtualApplications[].{virtualPath: virtualPath, physicalPath: physicalPath}'
+az appservice web config show --resource-group MY-RES-GROUP --name MY-APPSERVICE-APP --query 'virtualApplications[].{virtualPath: virtualPath, physicalPath: physicalPath}'
 {% endhighlight %}
 
 Following command can be used to get the contents of web.config
