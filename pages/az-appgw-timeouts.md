@@ -8,6 +8,10 @@ index_list_at_position: 3
 index_list_link_text: Timeout settings available in Microsoft Azure App Services and Microsoft Azure Application Gateway
 ---
 
+## Timeout settings for Azure Application Gateway and App Services
+
+Findings about various timeout settings available in Azure Application Gateway and Azure App Services
+
 ### `requestTimeout` in Azure Application Gateway
 
 Azure Application Gateway is a load balancer and web application firewall (WAF) in Azure, used for load distrubution, SSL termination, prevention against web based attacks (like Cross-site scripting, SQL Injection, etc) and its other features. Typically the Azure Application Gateway would be configured to route the requests to backend App Service instances to service the request.
@@ -156,7 +160,7 @@ App Service IIS supports `HttpPlatformHandler` directive that can be used to con
 
 {% highlight xml %}
 <?xml version="1.0" encoding="UTF-8"?>
-<configuration>
+<configuration xmlns:xdt="http://schemas.microsoft.com/XML-Document-Transform">
   <system.webServer>
     <!-- unrelated to requestTimeout setting, below rewrite rule is to force HTTPS for all requests -->
     <rewrite>
@@ -170,6 +174,7 @@ App Service IIS supports `HttpPlatformHandler` directive that can be used to con
         </rule>
       </rules>
     </rewrite>
+    <!-- sets request timeout to 4 mins -->
     <httpPlatform xdt:Transform="SetAttributes(requestTimeout)" requestTimeout="00:04:00"/>
   </system.webServer>
 </configuration>
