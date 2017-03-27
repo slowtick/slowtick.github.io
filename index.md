@@ -14,7 +14,6 @@ jsonld_include: slowtick.json
   {% endif %}
 {% endfor %}
 
-
 <script type="application/ld+json">
 {
   "@context":"http://schema.org",

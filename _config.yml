@@ -2,6 +2,7 @@ title: slowtick.com
 description: personal blog
 show_downloads: false
 google_analytics: UA-90858623-1
+google_optimize: GTM-M9F8J4M
 theme: jekyll-theme-cayman
 gems:
   - jekyll-sitemap
